@@ -1,0 +1,76 @@
+export const CATEGORIES = {
+  SALARY: { label: 'Salary', color: '#0c87f5', icon: '💼' },
+  FREELANCE: { label: 'Freelance', color: '#8b5cf6', icon: '💻' },
+  INVESTMENT: { label: 'Investment', color: '#06b6d4', icon: '📈' },
+  RENT: { label: 'Rent', color: '#ef4444', icon: '🏠' },
+  FOOD: { label: 'Food & Dining', color: '#f97316', icon: '🍽️' },
+  TRANSPORT: { label: 'Transport', color: '#eab308', icon: '🚗' },
+  ENTERTAINMENT: { label: 'Entertainment', color: '#ec4899', icon: '🎬' },
+  HEALTH: { label: 'Health', color: '#10b981', icon: '🏥' },
+  SHOPPING: { label: 'Shopping', color: '#a855f7', icon: '🛍️' },
+  UTILITIES: { label: 'Utilities', color: '#64748b', icon: '⚡' },
+  TRAVEL: { label: 'Travel', color: '#0ea5e9', icon: '✈️' },
+  EDUCATION: { label: 'Education', color: '#14b8a6', icon: '📚' },
+};
+
+export const INITIAL_TRANSACTIONS = [
+  { id: 'txn_001', date: '2026-04-28', amount: 85000, category: 'SALARY', type: 'income', description: 'Monthly Salary - March', merchant: 'TechCorp Inc.' },
+  { id: 'txn_002', date: '2026-04-27', amount: 25000, category: 'FREELANCE', type: 'income', description: 'UI/UX Project - Startup', merchant: 'DesignHub' },
+  { id: 'txn_003', date: '2026-04-26', amount: 28000, category: 'RENT', type: 'expense', description: 'Monthly Rent - 2BHK', merchant: 'Lodha Properties' },
+  { id: 'txn_004', date: '2026-04-25', amount: 4200, category: 'FOOD', type: 'expense', description: 'Weekly Groceries', merchant: 'BigBasket' },
+  { id: 'txn_005', date: '2026-04-24', amount: 12000, category: 'INVESTMENT', type: 'income', description: 'Dividend Received', merchant: 'Zerodha' },
+  { id: 'txn_006', date: '2026-04-23', amount: 3500, category: 'ENTERTAINMENT', type: 'expense', description: 'Netflix + Spotify + Prime', merchant: 'Subscriptions' },
+  { id: 'txn_007', date: '2026-04-22', amount: 1800, category: 'TRANSPORT', type: 'expense', description: 'Monthly Metro Pass', merchant: 'Mumbai Metro' },
+  { id: 'txn_008', date: '2026-04-21', amount: 8900, category: 'SHOPPING', type: 'expense', description: 'New Running Shoes', merchant: 'Nike Store' },
+  { id: 'txn_009', date: '2026-04-20', amount: 2200, category: 'FOOD', type: 'expense', description: 'Restaurant Dinner', merchant: 'The Bombay Canteen' },
+  { id: 'txn_010', date: '2026-04-19', amount: 5500, category: 'HEALTH', type: 'expense', description: 'Annual Health Checkup', merchant: 'Apollo Hospital' },
+  { id: 'txn_011', date: '2026-04-18', amount: 15000, category: 'FREELANCE', type: 'income', description: 'Mobile App Design', merchant: 'StartupX' },
+  { id: 'txn_012', date: '2026-04-17', amount: 2800, category: 'UTILITIES', type: 'expense', description: 'Electricity + Internet', merchant: 'BEST + Jio' },
+  { id: 'txn_013', date: '2026-04-15', amount: 45000, category: 'TRAVEL', type: 'expense', description: 'Goa Weekend Getaway', merchant: 'MakeMyTrip' },
+  { id: 'txn_014', date: '2026-04-14', amount: 6200, category: 'EDUCATION', type: 'expense', description: 'Udemy + Coursera Annual', merchant: 'E-Learning' },
+  { id: 'txn_015', date: '2026-04-12', amount: 3100, category: 'FOOD', type: 'expense', description: 'Office Lunch Week', merchant: 'Swiggy' },
+  { id: 'txn_016', date: '2026-04-10', amount: 18000, category: 'INVESTMENT', type: 'income', description: 'SIP Returns - ELSS', merchant: 'Groww' },
+  { id: 'txn_017', date: '2026-04-08', amount: 12500, category: 'SHOPPING', type: 'expense', description: 'Home Decor - Living Room', merchant: 'IKEA' },
+  { id: 'txn_018', date: '2026-04-06', amount: 900, category: 'TRANSPORT', type: 'expense', description: 'Uber rides - Week 1', merchant: 'Uber' },
+  { id: 'txn_019', date: '2026-04-04', amount: 4800, category: 'ENTERTAINMENT', type: 'expense', description: 'IPL Tickets', merchant: 'BookMyShow' },
+  { id: 'txn_020', date: '2026-04-02', amount: 8000, category: 'FREELANCE', type: 'income', description: 'Logo Design Project', merchant: 'Local Business' },
+  { id: 'txn_021', date: '2026-03-28', amount: 85000, category: 'SALARY', type: 'income', description: 'Monthly Salary - February', merchant: 'TechCorp Inc.' },
+  { id: 'txn_022', date: '2026-03-25', amount: 28000, category: 'RENT', type: 'expense', description: 'Monthly Rent - 2BHK', merchant: 'Lodha Properties' },
+  { id: 'txn_023', date: '2026-03-22', amount: 9500, category: 'FOOD', type: 'expense', description: "Valentine's Day Dinner", merchant: 'Bastian' },
+  { id: 'txn_024', date: '2026-03-20', amount: 22000, category: 'FREELANCE', type: 'income', description: 'Dashboard Design Project', merchant: 'FinTech Co.' },
+  { id: 'txn_025', date: '2026-03-18', amount: 6800, category: 'SHOPPING', type: 'expense', description: 'Clothes & Accessories', merchant: 'Myntra' },
+  { id: 'txn_026', date: '2026-03-15', amount: 3200, category: 'HEALTH', type: 'expense', description: 'Gym Membership', merchant: 'Cult.fit' },
+  { id: 'txn_027', date: '2026-03-12', amount: 15000, category: 'INVESTMENT', type: 'income', description: 'Stock Dividend - TCS', merchant: 'Zerodha' },
+  { id: 'txn_028', date: '2026-03-10', amount: 7200, category: 'ENTERTAINMENT', type: 'expense', description: 'Concert Tickets', merchant: 'Insider' },
+  { id: 'txn_029', date: '2026-03-08', amount: 2600, category: 'UTILITIES', type: 'expense', description: 'Monthly Bills', merchant: 'BEST + Airtel' },
+  { id: 'txn_030', date: '2026-03-05', amount: 1600, category: 'TRANSPORT', type: 'expense', description: 'Commute & Travel', merchant: 'Rapido + Metro' },
+];
+
+export const monthlyTrend = [
+  { month: 'Oct', income: 108000, expenses: 62000 },
+  { month: 'Nov', income: 115000, expenses: 78000 },
+  { month: 'Dec', income: 132000, expenses: 95000 },
+  { month: 'Jan', income: 118000, expenses: 71000 },
+  { month: 'Feb', income: 122000, expenses: 68500 },
+  { month: 'Mar', income: 163000, expenses: 137700 },
+];
+
+export const currentMonthStats = {
+  totalBalance: 847320,
+  income: 163000,
+  expenses: 137700,
+  prevMonthIncome: 122000,
+  prevMonthExpenses: 68500,
+};
+
+export const spendingByCategory = [
+  { name: 'Rent', value: 28000, color: '#ef4444', category: 'RENT' },
+  { name: 'Travel', value: 45000, color: '#0ea5e9', category: 'TRAVEL' },
+  { name: 'Shopping', value: 21400, color: '#a855f7', category: 'SHOPPING' },
+  { name: 'Food', value: 10300, color: '#f97316', category: 'FOOD' },
+  { name: 'Entertainment', value: 8300, color: '#ec4899', category: 'ENTERTAINMENT' },
+  { name: 'Health', value: 5500, color: '#10b981', category: 'HEALTH' },
+  { name: 'Education', value: 6200, color: '#14b8a6', category: 'EDUCATION' },
+  { name: 'Utilities', value: 2800, color: '#64748b', category: 'UTILITIES' },
+  { name: 'Transport', value: 2700, color: '#eab308', category: 'TRANSPORT' },
+];
