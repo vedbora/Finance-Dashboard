@@ -26,7 +26,7 @@ export default function ThemeToggle() {
           dark ? 'left-[calc(100%-1.75rem-0.25rem)]' : 'left-1',
         )}
       >
-        {dark ? <Moon size={14} className="text-neutral-400" strokeWidth={2} /> : <Sun size={14} className="text-neutral-700" strokeWidth={2} />}
+        {dark ? <Moon size={14} className="text-neutral-200" strokeWidth={2} /> : <Sun size={14} className="text-neutral-900" strokeWidth={2} />}
       </span>
       <span className="sr-only">{dark ? 'Dark' : 'Light'} mode</span>
     </button>

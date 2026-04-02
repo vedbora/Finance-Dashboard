@@ -49,7 +49,7 @@ function StatCard({ title, value, mom, icon: Icon, cardType }) {
         </div>
       </div>
       <div>
-        <p className="mb-1 text-sm font-medium text-neutral-500 dark:text-neutral-400">{title}</p>
+        <p className="mb-1 text-sm font-semibold text-neutral-500 dark:text-neutral-400">{title}</p>
         <p className="font-mono text-2xl font-semibold tracking-tight text-neutral-900 dark:text-white">{value}</p>
       </div>
     </Card>
@@ -78,8 +78,8 @@ export default function Dashboard() {
           }}
         />
         <div className="relative">
-          <p className="mb-1 text-sm font-medium text-neutral-400">Overview</p>
-          <h2 className="mb-6 text-xl font-semibold tracking-tight sm:text-2xl">Your financial snapshot</h2>
+          <p className="mb-1 text-sm font-semibold text-neutral-500">Overview</p>
+          <h2 className="mb-6 text-lg font-semibold tracking-tight sm:text-xl">Your financial snapshot</h2>
           <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:gap-10">
             <div>
               <p className="mb-1 text-xs font-medium uppercase tracking-wider text-neutral-400">Net worth</p>

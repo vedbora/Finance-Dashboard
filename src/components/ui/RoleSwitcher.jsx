@@ -32,7 +32,7 @@ export default function RoleSwitcher() {
         aria-haspopup="listbox"
         onClick={() => setOpen((v) => !v)}
         className={clsx(
-          'flex min-w-[140px] items-center gap-2 rounded-xl border border-neutral-200 bg-white py-2 pl-3 pr-2.5 text-left shadow-sm transition-all duration-200 dark:border-white/10 dark:bg-neutral-900',
+          'flex min-w-[140px] items-center gap-2 rounded-xl border border-neutral-200 bg-white py-2 pl-3 pr-2.5 text-left shadow-lg shadow-neutral-900/[0.05] transition-all duration-200 dark:border-white/10 dark:bg-neutral-900 dark:shadow-black/40',
           'hover:border-neutral-300 hover:shadow-md dark:hover:border-white/15',
           open && 'border-neutral-400 ring-2 ring-neutral-900/5 dark:border-white/20 dark:ring-white/10',
         )}
@@ -71,7 +71,7 @@ export default function RoleSwitcher() {
                 className={clsx(
                   'flex w-full items-start gap-3 rounded-xl px-3 py-2.5 text-left transition-colors duration-200',
                   selected
-                    ? 'bg-neutral-100 text-neutral-900 dark:bg-white/10 dark:text-white'
+                    ? 'border border-neutral-200 bg-neutral-100 text-neutral-900 shadow-sm dark:border-white/10 dark:bg-white/10 dark:text-white'
                     : 'text-neutral-600 hover:bg-neutral-50 dark:text-neutral-400 dark:hover:bg-white/[0.06]',
                 )}
               >

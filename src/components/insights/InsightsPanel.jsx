@@ -198,8 +198,8 @@ export default function InsightsPanel() {
         />
       </div>
 
-      <Card className="p-6">
-        <h3 className="font-semibold text-neutral-900 dark:text-white text-lg tracking-tight mb-5 flex items-center gap-3">
+      <Card>
+        <h3 className="font-semibold text-neutral-900 dark:text-white text-lg tracking-tight mb-6 flex items-center gap-3">
           <span className="w-9 h-9 rounded-xl flex items-center justify-center flex-shrink-0 bg-neutral-100 dark:bg-white/10 border border-neutral-200/80 dark:border-white/10 text-neutral-700 dark:text-neutral-200">
             <ListOrdered size={18} strokeWidth={2} />
           </span>

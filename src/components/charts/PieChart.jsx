@@ -38,7 +38,7 @@ export default function SpendingPieChart() {
   if (total === 0) {
     return (
       <Card>
-        <div className="mb-5">
+        <div className="mb-6">
           <h3 className="text-lg font-semibold tracking-tight text-neutral-900 dark:text-white">Spending by category</h3>
           <p className="text-sm text-neutral-500 dark:text-neutral-400">{periodLabel}</p>
         </div>
@@ -51,7 +51,7 @@ export default function SpendingPieChart() {
 
   return (
     <Card>
-      <div className="mb-5">
+      <div className="mb-6">
         <h3 className="text-lg font-semibold tracking-tight text-neutral-900 dark:text-white">Spending by category</h3>
         <p className="text-sm text-neutral-500 dark:text-neutral-400">{periodLabel}</p>
       </div>
