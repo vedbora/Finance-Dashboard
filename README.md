@@ -1,6 +1,6 @@
 # FinFlow — Finance Dashboard
 
-A modern, professional fintech dashboard built with React (Vite) and Tailwind CSS. Features real-time filtering, role-based access control, interactive charts, and smart financial insights.
+A modern, production-ready fintech dashboard built with React (Vite) and Tailwind CSS. It includes filtering & sorting, role-based UI controls, interactive charts, smart insights, and persistent data via `localStorage`.
 
 ---
 
@@ -9,7 +9,7 @@ A modern, professional fintech dashboard built with React (Vite) and Tailwind CS
 - **Dashboard Overview** — Summary cards (Balance, Income, Expenses), area line chart for monthly trends, pie chart for spending by category
 - **Transactions** — Full table with search, filter by type (Income/Expense), sort by date or amount, mobile-friendly list view
 - **Role-Based UI** — Viewer (read-only) / Admin (can add transactions via modal), switchable at runtime
-- **Insights Panel** — Top spending category, month-over-month comparison bars, AI-style text insights, savings rate
+- **Insights Panel** — Top spending category, month-over-month comparison bars, smart textual insights, savings rate
 - **Dark Mode** — Toggle between light and dark themes
 - **LocalStorage Persistence** — Transactions and preferences saved across sessions
 - **Responsive Design** — Mobile-first with sidebar on desktop, bottom nav on mobile
@@ -33,7 +33,7 @@ A modern, professional fintech dashboard built with React (Vite) and Tailwind CS
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-repo/finance-dashboard
+git clone https://github.com/<your-username>/Finance-Dashboard
 cd finance-dashboard
 
 # Install dependencies
@@ -81,10 +81,10 @@ src/
 
 ## 🎨 Design Decisions
 
-- **Color system**: Brand blue (#0c87f5), semantic green/red for income/expense
-- **Typography**: Sora (clean, modern) + JetBrains Mono (numbers)
-- **Cards**: Soft shadows, rounded-2xl, subtle borders
-- **Charts**: Area charts with gradient fills for depth
+- **Strict monochrome UI**: black / white / gray only (consistent contrast & zero “random” colors)
+- **Card system**: premium spacing + alignment (`p-6`), `rounded-2xl`, `shadow-lg`, subtle borders, and hover lift
+- **Charts**: monochrome (grayscale) strokes/fills to match the design system
+- **Micro-interactions**: smooth 200ms transitions for hover, dropdown open/close, and interactive elements
 
 ---
 
