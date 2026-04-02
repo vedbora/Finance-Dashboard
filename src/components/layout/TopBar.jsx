@@ -14,33 +14,35 @@ export default function TopBar({ activePage, onAddTransaction }) {
   };
 
   return (
-    <header className="sticky top-0 z-20 border-b border-neutral-200/80 dark:border-white/10 bg-white/90 dark:bg-neutral-950/90 backdrop-blur-md px-4 sm:px-6 lg:px-8 py-3.5 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-      <div className="flex items-center gap-3 min-w-0">
-        <div className="lg:hidden w-9 h-9 rounded-xl bg-neutral-900 dark:bg-white flex items-center justify-center flex-shrink-0 shadow-sm">
-          <TrendingUp size={18} className="text-white dark:text-neutral-900" />
+    <header className="sticky top-0 z-20 border-b border-neutral-200/90 bg-white/90 px-4 py-4 backdrop-blur-md dark:border-white/10 dark:bg-neutral-950/90 sm:px-6 lg:px-8">
+      <div className="mx-auto flex w-full max-w-7xl flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+        <div className="flex min-w-0 items-center gap-3">
+          <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-neutral-900 shadow-sm dark:bg-white lg:hidden">
+            <TrendingUp size={18} className="text-white dark:text-neutral-900" />
+          </div>
+          <div className="min-w-0">
+            <h1 className="truncate text-lg font-semibold tracking-tight text-neutral-900 dark:text-white">{pageTitles[activePage]}</h1>
+            <p className="mt-0.5 hidden text-xs text-neutral-500 dark:text-neutral-400 sm:block">
+              {new Date().toLocaleDateString('en-IN', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })}
+            </p>
+          </div>
         </div>
-        <div className="min-w-0">
-          <h1 className="font-semibold text-neutral-900 dark:text-white text-lg tracking-tight truncate">{pageTitles[activePage]}</h1>
-          <p className="text-xs text-neutral-500 dark:text-neutral-400 hidden sm:block mt-0.5">
-            {new Date().toLocaleDateString('en-IN', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })}
-          </p>
-        </div>
-      </div>
 
-      <div className="flex items-center gap-2 sm:gap-3 flex-wrap sm:flex-nowrap sm:justify-end">
-        <RoleSwitcher />
-        <ThemeToggle />
-        {state.role === 'admin' && (
-          <Button onClick={onAddTransaction} size="md" className="hidden sm:inline-flex">
-            <Plus size={16} strokeWidth={2.5} />
-            Add Transaction
-          </Button>
-        )}
-        {state.role === 'admin' && (
-          <Button onClick={onAddTransaction} size="sm" className="sm:hidden p-2.5 min-w-[2.5rem]">
-            <Plus size={18} strokeWidth={2.5} />
-          </Button>
-        )}
+        <div className="flex flex-wrap items-center gap-3 sm:justify-end">
+          <RoleSwitcher />
+          <ThemeToggle />
+          {state.role === 'admin' && (
+            <Button onClick={onAddTransaction} size="md" className="hidden sm:inline-flex">
+              <Plus size={16} strokeWidth={2.5} />
+              Add Transaction
+            </Button>
+          )}
+          {state.role === 'admin' && (
+            <Button onClick={onAddTransaction} size="sm" className="min-w-[2.5rem] p-2.5 sm:hidden">
+              <Plus size={18} strokeWidth={2.5} />
+            </Button>
+          )}
+        </div>
       </div>
     </header>
   );

@@ -1,15 +1,17 @@
 import clsx from 'clsx';
 
-export default function Card({ children, className, hover = false, onClick }) {
+export default function Card({ children, className, isStatic = false, onClick }) {
   return (
     <div
       onClick={onClick}
       className={clsx(
-        'bg-white dark:bg-neutral-900 rounded-2xl border border-neutral-200/80 dark:border-white/10',
-        'shadow-card transition-all duration-200',
-        hover && 'cursor-pointer hover:shadow-card-hover hover:border-neutral-300 dark:hover:border-white/15 active:scale-[0.998]',
-        onClick && 'cursor-pointer',
-        className
+        'h-full rounded-2xl border border-neutral-200 bg-white p-6 dark:border-white/10 dark:bg-neutral-900',
+        'shadow-lg shadow-neutral-900/[0.06] dark:shadow-black/50',
+        'transition-all duration-200',
+        !isStatic &&
+          'hover:scale-[1.02] hover:shadow-xl hover:shadow-neutral-900/[0.08] dark:hover:shadow-black/60',
+        onClick && 'cursor-pointer active:scale-[0.99]',
+        className,
       )}
     >
       {children}

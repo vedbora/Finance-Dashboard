@@ -31,10 +31,10 @@ export default function Sidebar({ activePage, setActivePage }) {
             key={id}
             onClick={() => setActivePage(id)}
             className={clsx(
-              'w-full flex items-center gap-3 px-3 py-2.5 rounded-xl transition-all duration-200',
+              'w-full flex items-center gap-3 rounded-xl px-3 py-2.5 transition-all duration-200',
               activePage === id
                 ? 'bg-white text-neutral-950 shadow-sm'
-                : 'text-neutral-400 hover:text-white hover:bg-white/5',
+                : 'text-neutral-400 hover:bg-white/5 hover:text-white',
               collapsed && 'justify-center px-2'
             )}
           >

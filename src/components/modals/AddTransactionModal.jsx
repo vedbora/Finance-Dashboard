@@ -36,7 +36,7 @@ export default function AddTransactionModal({ onClose }) {
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
       <div className="absolute inset-0 bg-black/50 backdrop-blur-[2px] transition-opacity duration-200" onClick={onClose} aria-hidden />
-      <div className="relative bg-white dark:bg-neutral-900 rounded-2xl border border-neutral-200 dark:border-white/10 shadow-2xl shadow-black/20 w-full max-w-md animate-slide-up">
+      <div className="relative w-full max-w-md animate-slide-up rounded-2xl border border-neutral-200 bg-white shadow-xl dark:border-white/10 dark:bg-neutral-900 dark:shadow-black/40">
         <div className="flex items-center justify-between px-6 py-5 border-b border-neutral-200/80 dark:border-white/10">
           <div>
             <h2 className="font-semibold text-neutral-900 dark:text-white text-lg tracking-tight">Add transaction</h2>

@@ -20,7 +20,7 @@ const iconBoxB = `${iconBox} bg-neutral-200/50 text-neutral-900 dark:bg-neutral-
 function InsightCard({ icon: Icon, title, value, subtitle, variant = 'a' }) {
   const box = variant === 'b' ? iconBoxB : iconBoxA;
   return (
-    <Card className="p-6 hover:shadow-card-hover transition-all duration-200 animate-slide-up">
+    <Card className="animate-slide-up">
       <div className="flex items-start gap-4">
         <div className={box}>
           <Icon size={20} strokeWidth={2} />
@@ -153,7 +153,7 @@ export default function InsightsPanel() {
 
   return (
     <div className="space-y-8">
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
+      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-8 lg:grid-cols-3">
         <InsightCard
           icon={TrendingUp}
           title="Income growth"
@@ -218,8 +218,8 @@ export default function InsightsPanel() {
         </div>
       </Card>
 
-      <Card className="p-6">
-        <h3 className="font-semibold text-neutral-900 dark:text-white text-lg tracking-tight mb-5">Month over month</h3>
+      <Card>
+        <h3 className="mb-5 text-lg font-semibold tracking-tight text-neutral-900 dark:text-white">Month over month</h3>
         {lastMonth && currentMonth ? (
           <div className="space-y-6">
             {[
